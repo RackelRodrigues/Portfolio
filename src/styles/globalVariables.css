@@ -1,0 +1,11 @@
+:root {
+  /* Cores */
+  --cor-primaria: #4a3157;
+  --cor-secundaria: #b02d5c;
+  --cor-fundo: #f9f9f9;
+
+  /* Fontes */
+  --fonte-principal: "Raleway", sans-serif;
+  --fonte-secundaria: "Mallanna", sans-serif;
+  --fonte-decorativa: "Mansalva", cursive;
+}
