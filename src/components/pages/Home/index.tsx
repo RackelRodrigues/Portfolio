@@ -4,6 +4,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const Home = () => {
   return (
     <>
+      {/* <Header MenuItems={menuList} /> */}
       <Background>
         <Image src="src/assets/images/Rackel.svg" alt="foto minha" />
         <div>

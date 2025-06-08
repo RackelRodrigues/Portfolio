@@ -7,10 +7,7 @@ export const Container = styled.header`
   padding: 1rem 7rem;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
 
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -18,12 +15,33 @@ export const Container = styled.header`
     display: flex;
     gap: 1rem;
   }
+
+  @media (min-width: 750px) and (max-width: 1280px) {
+    padding: 1rem 3rem;
+    margin: 0;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  @media (max-width: 599px) {
+    padding: 0.3rem 1rem;
+  }
 `;
 
 export const Logo = styled.h2`
   color: var(--primary-color);
   font-family: var(--decorative-font);
-  font-size: 2rem;
+  font-size: 1.8rem;
+
+  @media (min-width: 750px) and (max-width: 1280px) {
+    font-size: 1.5rem;
+    max-width: 30rem;
+    display: flex;
+  }
+
+  @media (max-width: 599px) {
+    font-size: 1rem;
+  }
 `;
 
 export const Button = styled.button`
