@@ -21,3 +21,5 @@ export const Nav = styled.a`
 `;
 
 export const ContainerNav = styled.div``;
+
+export const SocialMedia = styled.a``;
