@@ -7,12 +7,17 @@ interface SkillbarProps {
   ColorPercent: string;
 }
 
-const SkillBar = () => {
+const SkillBar = ({
+  UrlImage,
+  percent,
+  BackgroundColor,
+  ColorPercent,
+}: SkillbarProps) => {
   return (
     <>
-      <Container>
-        <Porcentage>
-          <ImageTecn src="/src/assets/images/html.png" alt="html" />
+      <Container percentage={percent} colorPorcentage={ColorPercent}>
+        <Porcentage BackgroundColor={BackgroundColor}>
+          <ImageTecn src={UrlImage} />
         </Porcentage>
       </Container>
     </>

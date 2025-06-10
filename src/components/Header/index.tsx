@@ -42,7 +42,16 @@ const Header = ({ MenuItems }: HeaderProps) => {
               <Nav key={item.title}>{item.title}</Nav>
             ))}
           </ContainerNav>
-          <Button>Let's Talk</Button>
+          <Button
+            onClick={() =>
+              window.open(
+                "https://mail.google.com/mail/?view=cm&fs=1&to=rackelrodrigues247@gmail.com",
+                "_blank"
+              )
+            }
+          >
+            Let's Talk
+          </Button>
         </div>
       )}
     </Container>
