@@ -4,14 +4,15 @@ import { Container, Nav, Button, Logo, ContainerNav } from "./styles";
 import { menuList } from "../../utils/menuList";
 
 type MenuItem = {
+  id?: string;
   title: string;
 };
 
 interface HeaderProps {
-  MenuItems: MenuItem[];
+  menuItems: MenuItem[];
 }
 
-const Header = ({ MenuItems }: HeaderProps) => {
+const Header = ({ menuItems }: HeaderProps) => {
   const [sidebarActive, SetSiddebarActive] = useState<Boolean>();
 
   useEffect(() => {
@@ -30,6 +31,7 @@ const Header = ({ MenuItems }: HeaderProps) => {
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
   return (
     <Container>
       <Logo>Rackel Rodrigues</Logo>
@@ -38,8 +40,10 @@ const Header = ({ MenuItems }: HeaderProps) => {
       ) : (
         <div className="Containerall">
           <ContainerNav>
-            {MenuItems.map((item) => (
-              <Nav key={item.title}>{item.title}</Nav>
+            {menuItems.map((item) => (
+              <Nav href={`#${item.id}`} key={item.title}>
+                {item.title}
+              </Nav>
             ))}
           </ContainerNav>
           <Button

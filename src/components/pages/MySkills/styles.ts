@@ -6,7 +6,20 @@ export const ContainerSkills = styled.div`
   margin: 0 auto;
   width: 100%;
   align-items: center;
-  justify-items: center; /* Centraliza os itens dentro de cada célula */
+  justify-items: center;
   gap: 5rem;
   height: 90vh;
+
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media screen and (max-width: 480px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    height: 100%;
+  }
 `;
+
+export const Container = styled.div``;

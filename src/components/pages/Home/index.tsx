@@ -1,11 +1,14 @@
 import { Background, Text, HelloMessage, Button, Image } from "./styles";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-const Home = () => {
+interface HomeProps {
+  id?: string;
+}
+
+const Home = ({ id }: HomeProps) => {
   return (
     <>
-      {/* <Header MenuItems={menuList} /> */}
-      <Background>
+      <Background id={id}>
         <Image src="src/assets/images/Rackel.svg" alt="foto minha" />
         <div>
           <HelloMessage>Hello</HelloMessage>

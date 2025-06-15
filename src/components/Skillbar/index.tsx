@@ -1,23 +1,23 @@
 import { Container, ImageTecn, Porcentage } from "./styles";
 
 interface SkillbarProps {
-  UrlImage: string;
+  urlImage: string;
   percent: number;
-  BackgroundColor: string;
+  backgroundColor: string;
   ColorPercent: string;
 }
 
 const SkillBar = ({
-  UrlImage,
+  urlImage,
   percent,
-  BackgroundColor,
+  backgroundColor,
   ColorPercent,
 }: SkillbarProps) => {
   return (
     <>
       <Container percentage={percent} colorPorcentage={ColorPercent}>
-        <Porcentage BackgroundColor={BackgroundColor}>
-          <ImageTecn src={UrlImage} />
+        <Porcentage BackgroundColor={backgroundColor}>
+          <ImageTecn src={urlImage} />
         </Porcentage>
       </Container>
     </>

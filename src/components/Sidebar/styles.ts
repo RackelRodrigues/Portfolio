@@ -17,26 +17,23 @@ export const SidebarContainer = styled.div<SidebarProps>`
   position: fixed;
   top: 0;
   right: ${({ isActive }) => (isActive ? "0" : "-100%")};
-  width: 18rem;
+  width: 100%;
   max-width: 25rem;
   min-width: 15rem;
-  height: 40vh;
+  height: auto;
   z-index: 1000;
   display: ${({ isActive }) => (isActive ? "flex" : "none")};
   flex-direction: column;
-  background: rgba(255, 255, 255, 0.6);
-  /* backdrop-filter: blur(10px); */
-  /* padding-left: 2rem; */
-
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   transition: right 0.4s ease-in-out;
-  @media (max-width: 768px) {
-    height: 55vh;
-    padding: 0 0 0 1rem;
-  }
+
   @media (max-width: 480px) {
-    height: 60vh;
+    height: auto;
     padding: 0 0 0 1rem;
   }
+
   .ContainerNav {
     /* width: 100%; */
     height: 100%;

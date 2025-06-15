@@ -5,7 +5,6 @@ export const Background = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  /* padding-top: 4rem; */
   gap: 4rem;
   height: 90vh;
   @media (max-width: 768px) {
@@ -68,7 +67,7 @@ export const Button = styled.button`
   border-radius: 0.5rem;
   padding: 0.8rem 5rem;
   display: flex;
-  align-self: center;
+  align-items: center;
   justify-self: center;
   gap: 0.3rem;
   font-family: var(--main-font);
@@ -80,10 +79,6 @@ export const Button = styled.button`
   @media (max-width: 599px) {
     padding: 0.8rem 3rem;
     top: -110px;
+    z-index: 1;
   }
-  /* width: 100%; */
-  /* position: relative;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
 `;

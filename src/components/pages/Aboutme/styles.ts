@@ -2,11 +2,15 @@ import styled from "styled-components";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 
 export const Background = styled.div`
-  height: 100vh;
+  height: 100%;
   width: 100%;
-
+  padding: 10rem 0 0 0 0;
   background-color: var(--primary-color);
-  /* gap: 2rem; */
+
+  @media screen and (min-width: 750px) and (max-width: 1280px) {
+    height: 100%;
+    padding: 4rem 0 0 0 0;
+  }
 `;
 
 export const Container = styled.div`
@@ -17,29 +21,39 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   gap: 2.9rem;
-  /* .photoandText {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-  } */
+  padding: 4rem 0 0 0;
+
+  @media screen and (min-width: 750px) and (max-width: 1280px) {
+    height: 100%;
+    padding: 4rem 0 0 0;
+    gap: 3rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    gap: 2rem;
+  }
 `;
 
 export const TextColumn = styled.div`
   flex: 1;
+
+  @media screen and (max-width: 768px) {
+    order: 1;
+  }
 `;
 
 export const ImageColumn = styled.div`
-  width: 30rem;
+  /* width: 30rem; */
   align-self: flex-start;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   justify-content: center;
-  margin-left: auto;
-  @media (min-width: 768px) {
-    margin-left: auto;
-    align-self: flex-start;
+  /* margin-left: auto; */
+  @media screen and (max-width: 768px) {
+    order: 2;
+    width: 100%;
   }
 `;
 
@@ -54,6 +68,12 @@ export const PhotoAndText = styled.div`
     align-items: flex-start;
     justify-content: space-between;
   }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const TextPage = styled.p`
@@ -64,6 +84,18 @@ export const TextPage = styled.p`
   max-width: 110rem;
   span {
     font-family: var(--decorative-font);
+  }
+
+  @media screen and (min-width: 750px) and (max-width: 1280px) {
+    max-width: 65rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 40rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    max-width: 20rem;
   }
 `;
 
@@ -103,37 +135,47 @@ export const Svgdownload = styled(AiOutlineCloudDownload)`
 `;
 
 export const Image = styled.img`
-  display: flex;
+  display: block;
   height: 100%;
-  align-items: end;
-  justify-content: flex-end;
-  flex-direction: column;
+
   width: 30rem;
   z-index: 1;
-  position: relative;
-  /* margin-bottom: 0.5rem; */
-  /* clip-path: circle(50% at 30%); */
-  margin-right: 4rem;
-  /* margin-top: 2rem; */
+  object-fit: contain;
+  /* position: relative; */
+  /* margin-right: 4rem; */
+  max-width: 100%;
+  bottom: 0;
+
+  @media screen and (max-width: 768px) {
+    order: 0;
+  }
 `;
 export const ImageEffect = styled.img`
   width: 100%;
   height: 100%;
   z-index: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
+  /* position: absolute; */
+  /* top: 0;
+  left: 0; */
 `;
 
 export const ContainerImages = styled.div`
-  position: relative;
-  height: auto;
-  width: 30rem;
-  float: right;
+  /* position: relative; */
+  height: 100%;
+  /* width: 30rem; */
+  /* float: right; */
   display: flex;
-  align-items: flex-end;
-  shape-outside: circle(50% at 30%);
-  /* margin-top: 0.8rem; */
+  align-items: end;
+  justify-content: flex-end;
+  flex-direction: column;
+  overflow: hidden;
+  /* shape-outside: circle(50% at 30%); */
+
+  @media screen and (max-width: 768px) {
+    order: 0;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 export const TagName = styled.p`
   font-size: 1.9rem;

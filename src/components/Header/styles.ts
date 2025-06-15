@@ -33,7 +33,7 @@ export const Logo = styled.h2`
   font-family: var(--decorative-font);
   font-size: 1.8rem;
 
-  @media (min-width: 750px) and (max-width: 1280px) {
+  @media screen and (min-width: 750px) and (max-width: 1280px) {
     font-size: 1.5rem;
     max-width: 30rem;
     display: flex;
@@ -54,6 +54,9 @@ export const Button = styled.button`
   border: none;
   outline: none;
   cursor: pointer;
+  &:hover {
+    filter: brightness(0.9);
+  }
 `;
 
 export const ContainerNav = styled.div`
@@ -68,4 +71,5 @@ export const Nav = styled.a`
   font-size: 1.5rem;
   font-weight: 200;
   cursor: pointer;
+  text-decoration: none;
 `;

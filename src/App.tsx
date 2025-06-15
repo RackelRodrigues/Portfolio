@@ -10,13 +10,13 @@ import Footer from "./components/Footer/index.tsx";
 function App() {
   return (
     <>
-      <Header MenuItems={menuList} />
-      <Home />
-      <AboutMe />
-      <MySkills />
-      <Projects />
-      <ProjectsFigma />
-      <Footer />
+      <Header menuItems={menuList} />
+      <Home id="Home" />
+      <AboutMe id="About" />
+      <MySkills id="Skills" />
+      <Projects id="Projects" />
+      <ProjectsFigma id="Figma" />
+      <Footer menuItems={menuList} />
     </>
   );
 }

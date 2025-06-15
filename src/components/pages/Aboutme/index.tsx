@@ -16,9 +16,13 @@ import {
 } from "./styles";
 import Resume from "../../../assets/images/_curriculo rackel.pdf";
 
-const AboutMe = () => {
+interface AboutMeProps {
+  id?: string;
+}
+
+const AboutMe = ({ id }: AboutMeProps) => {
   return (
-    <Background>
+    <Background id={id}>
       <Title variantColor=" var(--background-color)">About Me</Title>
       <Container>
         <TextPage>
@@ -40,7 +44,7 @@ const AboutMe = () => {
           <ImageColumn>
             <TagName>Hey, There!</TagName>
             <ContainerImages>
-              <ImageEffect src="/src/assets/images/Vector.svg" />
+              {/* <ImageEffect src="/src/assets/images/Vector.svg" /> */}
               <Image src="/src/assets/images/fot_port2.png" />
             </ContainerImages>
           </ImageColumn>

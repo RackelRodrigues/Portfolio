@@ -1,18 +1,36 @@
-interface CardProps {
+import { Button, Container, ContainerAll, Walpaper } from "./styles";
+
+type CardData = {
+  projectName: string;
+  notionLink: string;
+  figmaLink: string;
   urlImage: string;
-  linkProject: string;
-  linkWebsite: string;
-  //   Tags: string[];
+};
+
+interface CardProps {
+  data: CardData[];
 }
 
-const CardProject = () => {
+const CardFigma = ({ data }: CardProps) => {
   return (
-    <>
-      <div>
-        <h1>i love you</h1>
-      </div>
-    </>
+    <ContainerAll>
+      {data.map((project, id) => (
+        <Container key={id}>
+          <Walpaper
+            src={project.urlImage}
+            onError={(e) => {
+              e.currentTarget.src = "src/assets/images/background.png";
+            }}
+          />
+          {/* <h3>{project.projectName}</h3> */}
+          <div className="buttonsContainer">
+            <Button> Visualizar Notion</Button>
+            <Button>Visualizar Design</Button>
+          </div>
+        </Container>
+      ))}
+    </ContainerAll>
   );
 };
 
-export default CardProject;
+export default CardFigma;
