@@ -26,7 +26,13 @@ const CardProject = ({ data }: CardProps) => {
     <>
       {data.map((project, id) => (
         <Container key={id}>
-          <ImageProjct src={project.urlImage} alt="imageProject" />
+          <ImageProjct
+            src={project.urlImage}
+            alt="imageProject"
+            onError={(e) => {
+              e.currentTarget.src = "/src/assets/images/background.png";
+            }}
+          />
           <div>
             <Nameproject>{project.projectName}</Nameproject>
             <Description>{project.description}</Description>

@@ -22,10 +22,21 @@ const CardFigma = ({ data }: CardProps) => {
               e.currentTarget.src = "src/assets/images/background.png";
             }}
           />
-          {/* <h3>{project.projectName}</h3> */}
           <div className="buttonsContainer">
-            <Button> Visualizar Notion</Button>
-            <Button>Visualizar Design</Button>
+            <Button
+              onClick={() =>
+                window.open(project.notionLink, "_blank", "noopener,noreferrer")
+              }
+            >
+              Visualizar Notion
+            </Button>
+            <Button
+              onClick={() =>
+                window.open(project.figmaLink, "_blank", "noopener,noreferrer")
+              }
+            >
+              Visualizar Design
+            </Button>
           </div>
         </Container>
       ))}

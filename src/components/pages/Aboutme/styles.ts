@@ -4,12 +4,18 @@ import { AiOutlineCloudDownload } from "react-icons/ai";
 export const Background = styled.div`
   height: 100%;
   width: 100%;
-  padding: 10rem 0 0 0 0;
+  padding: 10rem 0 0 0;
   background-color: var(--primary-color);
 
-  @media screen and (min-width: 750px) and (max-width: 1280px) {
+  @media screen and (min-width: 610px) and (max-width: 1280px) {
     height: 100%;
-    padding: 4rem 0 0 0 0;
+    width: 100%;
+    padding: 4rem 1rem 0 1rem;
+  }
+  @media screen and (max-width: 609px) {
+    height: 100%;
+    width: 100%;
+    padding: 3rem 1rem 0 1rem;
   }
 `;
 
@@ -23,14 +29,17 @@ export const Container = styled.div`
   gap: 2.9rem;
   padding: 4rem 0 0 0;
 
-  @media screen and (min-width: 750px) and (max-width: 1280px) {
+  @media screen and (min-width: 609px) and (max-width: 1280px) {
     height: 100%;
     padding: 4rem 0 0 0;
     gap: 3rem;
   }
 
-  @media screen and (max-width: 768px) {
-    gap: 2rem;
+  @media screen and (max-width: 609px) {
+    /* gap: 2rem; */
+    width: 100%;
+    padding: 2rem 0 0 0;
+    /* padding: 2rem 0 0 0; */
   }
 `;
 
@@ -86,17 +95,18 @@ export const TextPage = styled.p`
     font-family: var(--decorative-font);
   }
 
-  @media screen and (min-width: 750px) and (max-width: 1280px) {
+  @media screen and (min-width: 610px) and (max-width: 1280px) {
     max-width: 65rem;
   }
 
-  @media screen and (max-width: 768px) {
-    max-width: 40rem;
+  @media screen and (max-width: 609px) {
+    max-width: 35rem;
+    font-size: 1rem;
   }
 
-  @media screen and (max-width: 480px) {
+  /* @media screen and (max-width: 480px) {
     max-width: 20rem;
-  }
+  } */
 `;
 
 export const Buttondownload = styled.button`

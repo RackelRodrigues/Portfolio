@@ -10,12 +10,12 @@ export const ContainerSkills = styled.div`
   gap: 5rem;
   height: 90vh;
 
-  @media screen and (min-width: 768px) and (max-width: 1280px) {
+  @media screen and (min-width: 610px) and (max-width: 1280px) {
     gap: 3rem;
     grid-template-columns: repeat(3, 1fr);
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 609px) {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     height: 100%;

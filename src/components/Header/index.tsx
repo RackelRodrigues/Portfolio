@@ -18,11 +18,11 @@ const Header = ({ menuItems }: HeaderProps) => {
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
-      if (width < 1024) {
-        SetSiddebarActive(true);
-        console.log("Tablet detectado");
-      } else {
+      if (width <= 1025) {
         SetSiddebarActive(false);
+        console.log("Mobile/Tablet detectado");
+      } else {
+        SetSiddebarActive(true);
       }
     };
 

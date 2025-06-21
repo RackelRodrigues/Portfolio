@@ -10,4 +10,8 @@ export const Title = styled.h1<Props>`
   color: ${({ variantColor }) => variantColor};
   text-align: center;
   margin: 0 auto;
+
+  @media (max-width: 609px) {
+    font-size: 3rem;
+  }
 `;

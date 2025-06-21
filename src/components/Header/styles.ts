@@ -11,20 +11,28 @@ export const Container = styled.header`
   top: 0;
   left: 0;
   width: 100%;
+
+  /* @media screen and (max-width: 609px) {
+    padding: 
+  } */
   .Containerall {
     display: flex;
     gap: 1rem;
+
+    @media (max-width: 1224px) {
+      display: none;
+    }
   }
 
-  @media (min-width: 750px) and (max-width: 1280px) {
-    padding: 1rem 3rem;
+  @media screen and (min-width: 610px) and (max-width: 1222px) {
+    padding: 1rem 0.5rem;
     margin: 0;
     justify-content: space-between;
     width: 100%;
   }
 
-  @media (max-width: 599px) {
-    padding: 0.3rem 1rem;
+  @media (max-width: 609px) {
+    padding: 0.3rem 0.5rem;
   }
 `;
 

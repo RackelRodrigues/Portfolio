@@ -12,6 +12,7 @@ export const Background = styled.div`
   }
   @media (max-width: 599px) {
     gap: 1rem;
+    padding: 0 1rem;
   }
 `;
 
@@ -44,7 +45,7 @@ export const Text = styled.h4`
     font-size: 1.7rem;
   }
   @media (max-width: 599px) {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 `;
 
@@ -56,7 +57,7 @@ export const HelloMessage = styled.h1`
     font-size: 6rem;
   }
   @media (max-width: 599px) {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 `;
 
@@ -76,9 +77,15 @@ export const Button = styled.button`
   outline: none;
   position: relative;
   top: -80px;
-  @media (max-width: 599px) {
+  /* width: 100%; */
+  @media screen and (min-width: 610px) and (max-width: 1225px) {
     padding: 0.8rem 3rem;
-    top: -110px;
+    /* top: -110px;
+    z-index: 1; */
+  }
+  @media screen and (max-width: 609px) {
+    padding: 0.5rem 2rem;
+    /* top: -110px; */
     z-index: 1;
   }
 `;

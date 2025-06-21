@@ -9,11 +9,14 @@ export const Container = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 28rem;
+  /* 
   @media screen and (max-width: 768px) {
     max-width: 40rem;
-  }
-  @media screen and (max-width: 480px) {
-    max-width: 25rem;
+  } */
+  @media screen and (max-width: 609px) {
+    /* max-width: 25rem; */
+    padding: 0 0.5rem;
+    max-width: 20rem;
   }
 
   .buttonsContainer {
@@ -21,6 +24,10 @@ export const Container = styled.div`
     flex-direction: row;
     width: 100%;
     gap: 1.5rem;
+
+    @media (max-width: 609px) {
+      gap: 0.5rem;
+    }
   }
 `;
 
@@ -42,6 +49,10 @@ export const Button = styled.button<Props>`
   &:hover {
     filter: brightness(0.9);
   }
+
+  @media (max-width: 609px) {
+    padding: 0.5rem 3rem;
+  }
 `;
 
 export const Linguages = styled.span`
@@ -57,7 +68,7 @@ export const Linguages = styled.span`
   cursor: pointer;
 
   @media screen and (max-width: 768px) {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 300;
     padding: 0 0.5rem;
   }
@@ -87,19 +98,21 @@ export const Nameproject = styled.h3`
 `;
 
 export const ImageProjct = styled.img`
-  width: 28rem;
-  height: 15rem;
+  max-width: 28rem;
+  max-height: 18rem;
+  width: 100%;
+  height: 100%;
   border: 2px solid var(--primary-color);
   border-radius: 0.3rem;
 
-  @media screen and (max-width: 768px) {
+  /* @media screen and (max-width: 768px) {
     width: 40rem;
     height: 20rem;
-  }
+  } */
 
-  @media screen and (max-width: 480px) {
-    width: 25rem;
-    height: 12rem;
+  @media screen and (max-width: 609px) {
+    max-width: 25rem;
+    max-height: 15rem;
   }
 `;
 

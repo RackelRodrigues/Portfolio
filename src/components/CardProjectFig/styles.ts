@@ -8,36 +8,37 @@ export const ContainerAll = styled.div`
   width: 100%;
   align-items: center;
   justify-items: center;
-  @media screen and (min-width: 765px) and (max-width: 1280px) {
+  @media screen and (min-width: 610px) and (max-width: 1280px) {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  @media screen and (max-width: 768px) {
+  /* @media screen and (max-width: 768px) {
     align-items: center;
     justify-items: center;
     margin: 0 auto;
-  }
+  } */
 
-  @media screen and (max-width: 768px) {
-    /* width: 40rem; */
-  }
-
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 609px) {
     grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
   }
 `;
 export const Container = styled.div`
   width: 100%;
   max-width: 37rem;
 
-  @media screen and (min-width: 750px) and (max-width: 1280px) {
-    max-width: 50rem;
-  }
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 610px) and (max-width: 1280px) {
     max-width: 40rem;
+    padding: 0 1rem;
+  }
+  @media screen and (max-width: 609px) {
+    max-width: 30rem;
+    padding: 0 1rem;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 450px) {
     max-width: 20rem;
   }
   .buttonsContainer {
@@ -75,21 +76,24 @@ export const Button = styled.button`
 `;
 
 export const Walpaper = styled.img`
-  width: 37rem;
-  height: 21rem;
+  max-width: 37rem;
+  max-height: 21rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.3rem;
 
-  @media screen and (min-width: 750px) and (max-width: 1280px) {
-    width: 50rem;
-    height: 28rem;
+  @media screen and (min-width: 610px) and (max-width: 1280px) {
+    max-width: 40rem;
+    max-height: 28rem;
   }
 
-  @media screen and (max-width: 768px) {
-    width: 40rem;
-    height: 25rem;
+  @media screen and (max-width: 609px) {
+    max-width: 30rem;
+    max-height: 25rem;
   }
-
+  /* 
   @media screen and (max-width: 480px) {
     width: 20rem;
     height: 12rem;
-  }
+  } */
 `;
