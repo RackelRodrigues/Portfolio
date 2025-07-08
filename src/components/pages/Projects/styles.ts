@@ -8,7 +8,8 @@ export const Background = styled.div`
   max-width: 100rem;
   align-items: center;
   justify-items: center;
-  gap: 3rem;
+  gap: 2rem;
+  padding: 0 2rem;
 
   @media screen and (min-width: 765px) and (max-width: 1280px) {
     grid-template-columns: repeat(2, 1fr);
@@ -19,6 +20,18 @@ export const Background = styled.div`
     grid-template-columns: 1fr;
     gap: 4rem;
     margin: 4rem auto;
+    align-items: center;
+    justify-items: center;
+  }
+
+  @media screen and (max-width: 609px) {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+    gap: 1rem;
+    max-width: 100%;
+    padding: 0 0.5rem;
   }
 `;
 

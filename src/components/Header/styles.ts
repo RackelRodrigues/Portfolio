@@ -5,21 +5,18 @@ export const Container = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 1rem 7rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
 
   top: 0;
   left: 0;
   width: 100%;
 
-  /* @media screen and (max-width: 609px) {
-    padding: 
-  } */
   .Containerall {
     display: flex;
     gap: 1rem;
 
-    @media (max-width: 1224px) {
+    @media screen and (max-width: 1020px) {
       display: none;
     }
   }

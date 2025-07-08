@@ -13,5 +13,10 @@ export const Title = styled.h1<Props>`
 
   @media (max-width: 609px) {
     font-size: 3rem;
+    margin: 2rem auto;
+  }
+  @media screen and (min-width: 376px) and (max-width: 768px) {
+    font-size: 3rem;
+    margin: 2rem auto;
   }
 `;

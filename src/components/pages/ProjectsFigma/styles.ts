@@ -6,6 +6,10 @@ export const Background = styled.div`
   @media (max-width: 609px) {
     margin: 2rem auto;
   }
+
+  /* @media screen and (max-width: 1025) and (min-width: 769px){
+    
+  } */
 `;
 
 export const Container = styled.div``;

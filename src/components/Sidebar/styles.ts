@@ -8,10 +8,6 @@ interface SidebarProps {
 export const Test = styled.div`
   background-color: transparent;
   height: 100%;
-
-  /* @media (max-width: 599px) {
-    max-width: 50rem;
-  } */
 `;
 export const SidebarContainer = styled.div<SidebarProps>`
   position: fixed;
@@ -22,37 +18,41 @@ export const SidebarContainer = styled.div<SidebarProps>`
   min-width: 15rem;
   height: auto;
   z-index: 1000;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+
   display: ${({ isActive }) => (isActive ? "flex" : "none")};
   flex-direction: column;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: var(--background-color);
+
   transition: right 0.4s ease-in-out;
 
-  @media (max-width: 480px) {
+  @media screen and (max-width: 480px) {
     height: auto;
     padding: 0 0 0 1rem;
+    max-width: 10rem;
+  }
+
+  @media screen and (max-width: 320px) {
+    height: auto;
+    padding: 0 0 0 1rem;
+
+    max-width: 10rem;
   }
 
   .ContainerNav {
-    /* width: 100%; */
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
-    padding-top: 8rem;
+    justify-content: center;
+    padding: 8rem 1rem 1rem 1rem;
     gap: 4rem;
     background-color: transparent;
-
-    @media (max-width: 599px) {
-      max-height: 50rem;
+    @media screen and (max-width: 320px) {
+      gap: 3.2rem;
     }
   }
-`;
-export const ContainerUrl = styled.div`
-  /* width: 100%; */
-  background: transparent;
 `;
 
 export const ContainerButton = styled.div`
@@ -73,11 +73,9 @@ export const NavLink = styled.a`
   text-decoration: none;
   width: 100%;
   z-index: 10000;
-  margin-top: 2rem;
   background-color: transparent;
   &:hover {
     text-decoration: none;
-    /* border-right: 1px solid #fff; */
   }
   @media (max-width: 480px) {
     font-size: 1.3rem;

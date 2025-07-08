@@ -4,7 +4,6 @@ import { AiOutlineCloudDownload } from "react-icons/ai";
 export const Background = styled.div`
   height: 100%;
   width: 100%;
-  padding: 10rem 0 0 0;
   background-color: var(--primary-color);
 
   @media screen and (min-width: 610px) and (max-width: 1280px) {
@@ -29,17 +28,9 @@ export const Container = styled.div`
   gap: 2.9rem;
   padding: 4rem 0 0 0;
 
-  @media screen and (min-width: 609px) and (max-width: 1280px) {
-    height: 100%;
-    padding: 4rem 0 0 0;
-    gap: 3rem;
-  }
-
   @media screen and (max-width: 609px) {
-    /* gap: 2rem; */
     width: 100%;
     padding: 2rem 0 0 0;
-    /* padding: 2rem 0 0 0; */
   }
 `;
 
@@ -91,6 +82,7 @@ export const TextPage = styled.p`
   font-weight: 200;
   color: var(--background-color);
   max-width: 110rem;
+  padding: 0;
   span {
     font-family: var(--decorative-font);
   }
@@ -103,10 +95,6 @@ export const TextPage = styled.p`
     max-width: 35rem;
     font-size: 1rem;
   }
-
-  /* @media screen and (max-width: 480px) {
-    max-width: 20rem;
-  } */
 `;
 
 export const Buttondownload = styled.button`
@@ -151,8 +139,6 @@ export const Image = styled.img`
   width: 30rem;
   z-index: 1;
   object-fit: contain;
-  /* position: relative; */
-  /* margin-right: 4rem; */
   max-width: 100%;
   bottom: 0;
 
@@ -164,22 +150,16 @@ export const ImageEffect = styled.img`
   width: 100%;
   height: 100%;
   z-index: 0;
-  /* position: absolute; */
-  /* top: 0;
-  left: 0; */
 `;
 
 export const ContainerImages = styled.div`
-  /* position: relative; */
   height: 100%;
-  /* width: 30rem; */
-  /* float: right; */
+
   display: flex;
   align-items: end;
   justify-content: flex-end;
   flex-direction: column;
   overflow: hidden;
-  /* shape-outside: circle(50% at 30%); */
 
   @media screen and (max-width: 768px) {
     order: 0;

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ContainerAll = styled.div`
-  /* margin-top: 5rem; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
@@ -11,12 +10,6 @@ export const ContainerAll = styled.div`
   @media screen and (min-width: 610px) and (max-width: 1280px) {
     grid-template-columns: repeat(1, 1fr);
   }
-
-  /* @media screen and (max-width: 768px) {
-    align-items: center;
-    justify-items: center;
-    margin: 0 auto;
-  } */
 
   @media screen and (max-width: 609px) {
     grid-template-columns: repeat(1, 1fr);
@@ -35,7 +28,7 @@ export const Container = styled.div`
   }
   @media screen and (max-width: 609px) {
     max-width: 30rem;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
   }
 
   @media screen and (max-width: 450px) {
@@ -52,7 +45,7 @@ export const Container = styled.div`
 
 export const Button = styled.button`
   outline: none;
-  padding: 0.6rem 4rem;
+  padding: 1rem 4rem;
   flex: 1;
   background-color: var(--primary-color);
   border: 1px solid var(--primary-color);
@@ -91,9 +84,4 @@ export const Walpaper = styled.img`
     max-width: 30rem;
     max-height: 25rem;
   }
-  /* 
-  @media screen and (max-width: 480px) {
-    width: 20rem;
-    height: 12rem;
-  } */
 `;

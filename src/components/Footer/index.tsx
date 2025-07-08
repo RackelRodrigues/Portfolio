@@ -66,7 +66,7 @@ const Footer = ({ menuItems }: FooterProps) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <StyledGithub />
+            <StyledGithub size={27} />
           </SocialMedia>
         </div>
       </Container>

@@ -9,10 +9,16 @@ export const Background = styled.div`
   height: 90vh;
   @media (max-width: 768px) {
     gap: 2rem;
+    height: 90vh;
   }
   @media (max-width: 599px) {
     gap: 1rem;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
+  }
+
+  @media screen and (max-width: 350px) {
+    padding: 0 0;
+    height: 80vh;
   }
 `;
 
@@ -61,7 +67,7 @@ export const HelloMessage = styled.h1`
   }
 `;
 
-export const Button = styled.button`
+export const Nav = styled.a`
   border: 2px solid var(--primary-color);
   background-color: transparent;
   color: var(--primary-color);
@@ -75,17 +81,19 @@ export const Button = styled.button`
   font-size: 1.3rem;
   cursor: pointer;
   outline: none;
-  position: relative;
-  top: -80px;
-  /* width: 100%; */
+  margin-bottom: 4rem;
+  text-decoration: none;
+
   @media screen and (min-width: 610px) and (max-width: 1225px) {
     padding: 0.8rem 3rem;
-    /* top: -110px;
-    z-index: 1; */
+    position: unset;
   }
   @media screen and (max-width: 609px) {
-    padding: 0.5rem 2rem;
-    /* top: -110px; */
-    z-index: 1;
+    padding: 0.5rem 1rem;
+
+    font-size: 1rem;
+    svg {
+      width: 2rem;
+    }
   }
 `;

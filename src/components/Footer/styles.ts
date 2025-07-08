@@ -11,7 +11,7 @@ export const Container = styled.footer`
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  padding: 0 10rem;
+  padding: 0 7rem;
   background-color: var(--primary-color);
 
   @media screen and (max-width: 768px) {
@@ -20,12 +20,15 @@ export const Container = styled.footer`
   }
 
   @media screen and (max-width: 480px) {
-    padding: 0 0.3rem;
+    padding: 0 0.2rem;
   }
   .socialContainer {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    @media screen and (min-width: 610px) and (max-width: 1024px) {
+      display: none;
+    }
 
     @media screen and (max-width: 480px) {
       display: none;
@@ -91,6 +94,13 @@ export const ContainerNav = styled.div`
   display: flex;
   flex-direction: row;
   gap: 1rem;
+
+  @media screen and (max-width: 768px) {
+    gap: 0.5rem;
+  }
+
+  @media screen and (max-width: 480px) {
+  }
 `;
 
 export const SocialMedia = styled.a`

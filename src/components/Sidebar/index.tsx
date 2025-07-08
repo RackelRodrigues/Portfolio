@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import {
   ButtonMenu,
   SidebarContainer,
-  ContainerUrl,
   NavLink,
   ContainerButton,
   HamburgerMenu,
@@ -12,7 +11,7 @@ import {
 } from "./styles";
 
 type Title = {
-  //   path: string;
+  id: string;
   title: string;
 };
 
@@ -35,9 +34,9 @@ export const Sidebar: React.FC<Props> = ({ TitlePage }) => {
           {isOpen && (
             <div className="ContainerNav">
               {TitlePage?.map((item, index) => (
-                <ContainerUrl key={index}>
-                  <NavLink>{item.title}</NavLink>
-                </ContainerUrl>
+                <NavLink href={`#${item.id}`} key={index}>
+                  {item.title}
+                </NavLink>
               ))}
               <Button>Let's Talk</Button>
             </div>

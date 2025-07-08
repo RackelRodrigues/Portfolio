@@ -9,13 +9,9 @@ export const Container = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 28rem;
-  /* 
-  @media screen and (max-width: 768px) {
-    max-width: 40rem;
-  } */
+
   @media screen and (max-width: 609px) {
-    /* max-width: 25rem; */
-    padding: 0 0.5rem;
+    padding: 0;
     max-width: 20rem;
   }
 
@@ -104,11 +100,6 @@ export const ImageProjct = styled.img`
   height: 100%;
   border: 2px solid var(--primary-color);
   border-radius: 0.3rem;
-
-  /* @media screen and (max-width: 768px) {
-    width: 40rem;
-    height: 20rem;
-  } */
 
   @media screen and (max-width: 609px) {
     max-width: 25rem;

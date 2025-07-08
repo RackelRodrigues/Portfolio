@@ -9,3 +9,16 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
+:root {
+  /* Colors */
+  --primary-color: #4a3157;
+  --secondary-color: #b02d5c;
+  --background-color: #dbd6c8;
+  --white-color: #ffff;
+
+  /* Fonts */
+  --main-font: "Raleway", sans-serif;
+  --secondary-font: "Mallanna", sans-serif;
+  --decorative-font: "Mansalva", cursive;
+}

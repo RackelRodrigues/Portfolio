@@ -2,16 +2,17 @@
   {
     "projectName": "CineFlix",
     "languages": ["TypeScript", "React", "CSS"],
-    "repositoryLink": "https://github.com/user/my-react-project",
-    "websiteLink": "https://myproject.com",
-    "description": "Site de demonstração com listagem de filmes, visualização de detalhes, sinopse, avaliação e pesquisa por título.",
-    "urlImage": "/src/assets/images/background."
+    "repositoryLink": "https://github.com/RackelRodrigues/MovieDemoReact",
+    "websiteLink": "https://cineflix-self.vercel.app/",
+    "description": "Aplicação de catálogo de filmes com exibição de títulos, sinopses detalhadas, página de detalhes e funcionalidade de pesquisa em tempo real por título.",
+
+    "urlImage": "https://i.ibb.co/20S24DhP/background-4.png"
   },
   {
     "projectName": "Space Tourism",
     "languages": ["React", "TypeScript", "Styled Components"],
-    "repositoryLink": "https://github.com/user/another-project",
-    "websiteLink": "https://anotherproject.com",
+    "repositoryLink": "https://github.com/RackelRodrigues/Space_Tourism",
+    "websiteLink": "https://space-tourism-nine-mu.vercel.app/",
     "description": "Site de turismo espacial com páginas interativas, informações sobre destinos, tripulação e tecnologia, tudo com um layout moderno e responsivo.",
     "urlImage": "https://i.ibb.co/VWz40L76/preview.jpg"
   },
@@ -19,15 +20,15 @@
     "projectName": "Countries Finder",
     "languages": ["React", "TypeScript", "Styled Components"],
     "repositoryLink": "https://github.com/RackelRodrigues/Countries_Finder",
-    "websiteLink": "https://anotherproject.com",
+    "websiteLink": "https://countries-finder-five.vercel.app/",
     "description": "Aplicação que exibe informações de países, permite busca por nome, filtros por região e visualização de países vizinhos. Também conta com alternância entre temas claro e escuro.",
     "urlImage": "https://i.ibb.co/1GYVcN8H/preview.jpg"
   },
   {
     "projectName": "Browser Extension",
     "languages": ["React", "TypeScript", "ReactIcons"],
-    "repositoryLink": "https://github.com/user/another-project",
-    "websiteLink": "https://anotherproject.com",
+    "repositoryLink": "https://github.com/RackelRodrigues/browser-extension-ui",
+    "websiteLink": "https://browser-extension-ui.vercel.app/",
     "description": "Extensão de navegador que adiciona funcionalidades extras à experiência do usuário, como atalhos, personalização e integração com sites populares.",
     "urlImage": "https://i.ibb.co/N6YrM52p/preview.jpg"
   },
@@ -35,16 +36,16 @@
     "projectName": "Rocketflix",
     "languages": ["React", "TypeScript"],
     "repositoryLink": "https://github.com/RackelRodrigues/Rocketflix",
-    "websiteLink": "https://anotherproject.com",
-    "description": "Rocketflix é uma plataforma web desenvolvida para facilitar a escolha de filmes. Com apenas um clique, o usuário recebe uma recomendação aleatória com imagem, título, sinopse e avaliação do filme. Ideal para quem quer fugir da indecisão e descobrir novos títulos de forma rápida e divertida.",
-    "urlImage": "https://i.ibb.co/cK79ZTC1/image.png"
+    "websiteLink": "https://rocketflix-three.vercel.app/",
+    "description": "Rocketflix é uma plataforma web que recomenda filmes aleatórios com apenas um clique. Rápido, simples, prático e divertido!",
+    "urlImage": "https://i.ibb.co/7xBbhbrC/background-1.png"
   },
   {
     "projectName": "Social Tree",
     "languages": ["React", "Styled Components"],
-    "repositoryLink": "https://github.com/user/another-project",
-    "websiteLink": "https://anotherproject.com",
-    "description": "project feito lalalalalalall.dewdwndowneofhnvnwh erfcfhu3tuhurnwfgughgjifb hvughufxjojwurfbigbgiodjepw",
-    "urlImage": "/src/assets/images/background.png"
+    "repositoryLink": "https://github.com/RackelRodrigues/Social_Tree",
+    "websiteLink": "https://social-tree-khaki.vercel.app/",
+    "description": "Social Tree é um site simples e organizado para reunir e exibir links importantes, como redes sociais, portfólio, contatos e outros. Ideal para usar como bio em perfis de redes sociais.",
+    "urlImage": "https://i.ibb.co/SwvxT0fc/background-3.png"
   }
 ]

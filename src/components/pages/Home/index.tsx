@@ -1,5 +1,10 @@
-import { Background, Text, HelloMessage, Button, Image } from "./styles";
-import { FaArrowRightLong } from "react-icons/fa6";
+import {
+  Background,
+  Text,
+  HelloMessage,
+  // Button,
+  Image,
+} from "./styles";
 
 interface HomeProps {
   id?: string;
@@ -7,7 +12,7 @@ interface HomeProps {
 
 const Home = ({ id }: HomeProps) => {
   return (
-    <>
+    <div>
       <Background id={id}>
         <Image src="src/assets/images/Rackel.svg" alt="foto minha" />
         <div>
@@ -19,12 +24,11 @@ const Home = ({ id }: HomeProps) => {
           <Text>Bem-vindo ao meu mundo digital!</Text>
         </div>
       </Background>
-
-      <Button>
+      {/* <Nav href="#About">
         Let's go
         <FaArrowRightLong size={20} />
-      </Button>
-    </>
+      </Nav> */}
+    </div>
   );
 };
 
