@@ -43,14 +43,12 @@ export const TextColumn = styled.div`
 `;
 
 export const ImageColumn = styled.div`
-  /* width: 30rem; */
   align-self: flex-start;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   justify-content: center;
-  /* margin-left: auto; */
   @media screen and (max-width: 768px) {
     order: 2;
     width: 100%;
