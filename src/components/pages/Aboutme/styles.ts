@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 
+type Props = {
+  align: boolean;
+};
+
 export const Background = styled.div`
   height: 100%;
   width: 100%;
@@ -26,7 +30,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   gap: 2.9rem;
-  padding: 4rem 0 0 0;
+  padding: 4rem 2rem 0 2rem;
 
   @media screen and (max-width: 609px) {
     width: 100%;
@@ -74,13 +78,14 @@ export const PhotoAndText = styled.div`
   }
 `;
 
-export const TextPage = styled.p`
+export const TextPage = styled.p<Props>`
   font-family: var(--main-font);
   font-size: 1.5rem;
   font-weight: 200;
   color: var(--background-color);
   max-width: 110rem;
   padding: 0;
+  text-align: ${({ align }) => (align ? "center" : "none")};
   span {
     font-family: var(--decorative-font);
   }

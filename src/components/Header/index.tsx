@@ -39,11 +39,13 @@ const Header = ({ menuItems }: HeaderProps) => {
       ) : (
         <div className="Containerall">
           <ContainerNav>
-            {menuItems.map((item) => (
-              <Nav href={`#${item.id}`} key={item.title}>
-                {item.title}
-              </Nav>
-            ))}
+            {menuItems.map((item) =>
+              item.title === "Início" ? null : (
+                <Nav href={`#${item.id}`} key={item.title}>
+                  {item.title}
+                </Nav>
+              )
+            )}
           </ContainerNav>
           <Button
             onClick={() =>

@@ -4,7 +4,7 @@ export const Container = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 7rem;
+  padding: 1rem 3rem;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
 
@@ -37,6 +37,7 @@ export const Logo = styled.h2`
   color: var(--primary-color);
   font-family: var(--decorative-font);
   font-size: 1.8rem;
+  cursor: pointer;
 
   @media screen and (min-width: 750px) and (max-width: 1280px) {
     font-size: 1.5rem;

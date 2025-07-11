@@ -10,7 +10,7 @@ interface ProjectsFigmaProps {
 const ProjectsFigma = ({ id }: ProjectsFigmaProps) => {
   return (
     <Container id={id}>
-      <Title variantColor="var(--secondary-color)">Projects on Figma</Title>
+      <Title variantColor="var(--secondary-color)">Projetos no Figma</Title>
       <Background>
         <CardFigma data={data} />
       </Background>

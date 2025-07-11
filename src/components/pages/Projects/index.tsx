@@ -10,7 +10,7 @@ interface ProjectProps {
 const Projects = ({ id }: ProjectProps) => {
   return (
     <Container id={id}>
-      <Title variantColor="var(--secondary-color)">Projects</Title>
+      <Title variantColor="var(--secondary-color)">Projetos</Title>
       <Background>
         <CardProject data={data} />
       </Background>

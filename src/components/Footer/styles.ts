@@ -11,7 +11,7 @@ export const Container = styled.footer`
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  padding: 0 7rem;
+  padding: 0 3rem;
   background-color: var(--primary-color);
 
   @media screen and (max-width: 768px) {

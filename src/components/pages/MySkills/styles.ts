@@ -7,7 +7,7 @@ export const ContainerSkills = styled.div`
   width: 100%;
   align-items: center;
   justify-items: center;
-  gap: 5rem;
+  gap: 6rem;
   height: 90vh;
 
   @media screen and (min-width: 610px) and (max-width: 1280px) {
