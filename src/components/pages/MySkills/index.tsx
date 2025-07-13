@@ -4,12 +4,15 @@ import { Container, ContainerSkills } from "./styles";
 
 interface MySkillsProps {
   id?: string;
+  isEnglish: boolean;
 }
 
-const MySkills = ({ id }: MySkillsProps) => {
+const MySkills = ({ id, isEnglish }: MySkillsProps) => {
   return (
     <Container id={id}>
-      <Title variantColor="var(--secondary-color)">Habilidades</Title>
+      <Title variantColor="var(--secondary-color)">
+        {isEnglish ? "Skills" : "Habilidades"}
+      </Title>
 
       <ContainerSkills>
         <SkillBar

@@ -6,17 +6,22 @@ import MySkills from "./components/pages/MySkills/index.tsx";
 import Projects from "./components/pages/Projects/index.tsx";
 import ProjectsFigma from "./components/pages/ProjectsFigma/index.tsx";
 import Footer from "./components/Footer/index.tsx";
+import { useState } from "react";
 
 function App() {
+  const [isEnglish, setIsEnglish] = useState(false);
+
+  const menu = menuList[isEnglish ? "en" : "pt"];
+
   return (
     <>
-      <Header menuItems={menuList} />
-      <Home id="Home" />
-      <AboutMe id="About" />
-      <MySkills id="Skills" />
-      <Projects id="Projects" />
-      <ProjectsFigma id="Figma" />
-      <Footer menuItems={menuList} />
+      <Header menuItems={menu} isEnglish={isEnglish} />
+      <Home id="Home" isEnglish={isEnglish} onChangeLanguage={setIsEnglish} />
+      <AboutMe id="About" isEnglish={isEnglish} />
+      <MySkills id="Skills" isEnglish={isEnglish} />
+      <Projects id="Projects" isEnglish={isEnglish} />
+      <ProjectsFigma id="Figma" isEnglish={isEnglish} />
+      <Footer menuItems={menu} isEnglish={isEnglish} />
     </>
   );
 }

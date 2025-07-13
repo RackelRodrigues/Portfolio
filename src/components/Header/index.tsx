@@ -10,11 +10,13 @@ type MenuItem = {
 
 interface HeaderProps {
   menuItems: MenuItem[];
+  isEnglish?: boolean;
 }
 
-const Header = ({ menuItems }: HeaderProps) => {
+const Header = ({ menuItems, isEnglish = false }: HeaderProps) => {
   const [sidebarActive, SetSiddebarActive] = useState<Boolean>();
-
+  const lang = isEnglish ? "en" : "pt";
+  const menu = menuList[lang];
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
@@ -35,13 +37,13 @@ const Header = ({ menuItems }: HeaderProps) => {
     <Container>
       <Logo>Rackel Rodrigues</Logo>
       {sidebarActive ? (
-        <Sidebar TitlePage={menuList} />
+        <Sidebar TitlePage={menu} isEnglish={isEnglish} />
       ) : (
         <div className="Containerall">
           <ContainerNav>
             {menuItems.map((item) =>
-              item.title === "Início" ? null : (
-                <Nav href={`#${item.id}`} key={item.title}>
+              item.title === "Início" || item.title === "Home" ? null : (
+                <Nav href={`#${item.id}`} key={item.id}>
                   {item.title}
                 </Nav>
               )
@@ -55,7 +57,7 @@ const Header = ({ menuItems }: HeaderProps) => {
               )
             }
           >
-            Let's Talk
+            {isEnglish ? "Lets a Talk" : "  Entre em contato"}
           </Button>
         </div>
       )}

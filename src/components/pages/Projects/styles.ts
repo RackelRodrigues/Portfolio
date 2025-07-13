@@ -7,13 +7,19 @@ export const Background = styled.div`
   width: 100%;
   max-width: 100rem;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   gap: 2rem;
   padding: 0 2rem;
 
   @media screen and (min-width: 765px) and (max-width: 1280px) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
+    /* gap: 2rem; */
+    padding: 0 0;
+    max-width: 100%;
+    justify-content: center;
+    padding: 0 0;
+
+    /* justify-self: center; */
   }
 
   @media screen and (max-width: 768px) {

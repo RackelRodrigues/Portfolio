@@ -10,6 +10,7 @@ import {
   StyledLinkedin,
   StyledDiscord,
 } from "./styles";
+import { menuList } from "../../utils/menuList";
 import { buttonLinks } from "../../utils/ListLinks";
 
 type MenuItem = {
@@ -19,8 +20,9 @@ type MenuItem = {
 
 interface FooterProps {
   menuItems: MenuItem[];
+  isEnglish?: boolean;
 }
-const Footer = ({ menuItems }: FooterProps) => {
+const Footer = ({ menuItems, isEnglish }: FooterProps) => {
   return (
     <>
       <Container>
@@ -35,8 +37,11 @@ const Footer = ({ menuItems }: FooterProps) => {
                 </Nav>
               ))}
             </ContainerNav>
-
-            <Text>© 2025 Rackel Rodrigues. Todos os direitos reservados.</Text>
+            <Text>
+              {isEnglish
+                ? "© 2025 Rackel Rodrigues. All rights reserved."
+                : "© 2025 Rackel Rodrigues. Todos os direitos reservados"}
+            </Text>
           </div>
         </div>
         <div className="socialContainer">

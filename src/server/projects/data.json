@@ -4,7 +4,10 @@
     "languages": ["React", "TypeScript", "Styled Components", "TMDB API"],
     "repositoryLink": "https://github.com/RackelRodrigues/MovieDemoReact",
     "websiteLink": "https://cineflix-self.vercel.app/",
-    "description": "Aplicação de catálogo de filmes com exibição de títulos, sinopses detalhadas, página de detalhes e funcionalidade de pesquisa em tempo real por título.",
+    "description": {
+      "pt": "Aplicação de catálogo de filmes com exibição de títulos, sinopses detalhadas, página de detalhes e funcionalidade de pesquisa em tempo real por título.",
+      "en": "Movie catalog application featuring title displays, detailed synopses, a details page, and real-time title search functionality."
+    },
     "urlImage": "https://i.ibb.co/20S24DhP/background-4.png"
   },
   {
@@ -12,7 +15,10 @@
     "languages": ["React", "TypeScript", "Styled Components"],
     "repositoryLink": "https://github.com/RackelRodrigues/Space_Tourism",
     "websiteLink": "https://space-tourism-nine-mu.vercel.app/",
-    "description": "Site de turismo espacial com páginas interativas, informações sobre destinos, tripulação e tecnologia, tudo com um layout moderno e responsivo.",
+    "description": {
+      "pt": "Site de turismo espacial com páginas interativas, informações sobre destinos, tripulação e tecnologia, tudo com um layout moderno e responsivo.",
+      "en": "Space tourism website with interactive pages, information about destinations, crew, and technology, all featuring a modern and responsive layout."
+    },
     "urlImage": "https://i.ibb.co/VWz40L76/preview.jpg"
   },
   {
@@ -20,7 +26,10 @@
     "languages": ["React", "TypeScript", "Styled Components", "REST API"],
     "repositoryLink": "https://github.com/RackelRodrigues/Countries_Finder",
     "websiteLink": "https://countries-finder-five.vercel.app/",
-    "description": "Aplicação que exibe informações de países, permite busca por nome, filtros por região e visualização de países vizinhos. Também conta com alternância entre temas claro e escuro.",
+    "description": {
+      "pt": "Aplicação que exibe informações de países, permite busca por nome, filtros por região e visualização de países vizinhos. Também conta com alternância entre temas claro e escuro.",
+      "en": "Application that displays country information, allows name search, region filters, and viewing neighboring countries. It also features a light and dark mode toggle."
+    },
     "urlImage": "https://i.ibb.co/1GYVcN8H/preview.jpg"
   },
   {
@@ -28,7 +37,10 @@
     "languages": ["React", "TypeScript", "ReactIcons"],
     "repositoryLink": "https://github.com/RackelRodrigues/browser-extension-ui",
     "websiteLink": "https://browser-extension-ui.vercel.app/",
-    "description": "Extensão de navegador que adiciona funcionalidades extras à experiência do usuário, como atalhos, personalização e integração com sites populares.",
+    "description": {
+      "pt": "Extensão de navegador que adiciona funcionalidades extras à experiência do usuário, como atalhos, personalização e integração com sites populares.",
+      "en": "Browser extension that adds extra features to the user experience, such as shortcuts, customization, and integration with popular websites."
+    },
     "urlImage": "https://i.ibb.co/N6YrM52p/preview.jpg"
   },
   {
@@ -36,7 +48,10 @@
     "languages": ["React", "TypeScript", "TMDB API"],
     "repositoryLink": "https://github.com/RackelRodrigues/Rocketflix",
     "websiteLink": "https://rocketflix-three.vercel.app/",
-    "description": "Rocketflix é uma plataforma web que recomenda filmes aleatórios com apenas um clique. Rápido, simples, prático e divertido!",
+    "description": {
+      "pt": "Rocketflix é uma plataforma web que recomenda filmes aleatórios com apenas um clique. Rápido, simples, prático e divertido!",
+      "en": "Rocketflix is a web platform that recommends random movies with just one click. Fast, simple, practical, and fun!"
+    },
     "urlImage": "https://i.ibb.co/7xBbhbrC/background-1.png"
   },
   {
@@ -44,7 +59,10 @@
     "languages": ["React", "css", "GitHub API"],
     "repositoryLink": "https://github.com/RackelRodrigues/Social_Tree",
     "websiteLink": "https://social-tree-khaki.vercel.app/",
-    "description": "Social Tree é um site simples e organizado para reunir e exibir links importantes, como redes sociais, portfólio, contatos e outros. Ideal para usar como bio em perfis de redes sociais.",
+    "description": {
+      "pt": "Social Tree é um site simples e organizado para reunir e exibir links importantes, como redes sociais, portfólio, contatos e outros. Ideal para usar como bio em perfis de redes sociais.",
+      "en": "Social Tree is a simple and organized website to gather and display important links such as social networks, portfolio, contacts, and more. Ideal for use as a bio on social media profiles."
+    },
     "urlImage": "https://i.ibb.co/SwvxT0fc/background-3.png"
   }
 ]

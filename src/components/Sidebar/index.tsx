@@ -17,10 +17,10 @@ type Title = {
 
 interface Props {
   TitlePage?: Title[];
-  isMobile?: boolean;
+  isEnglish?: boolean;
 }
 
-export const Sidebar: React.FC<Props> = ({ TitlePage }) => {
+export const Sidebar: React.FC<Props> = ({ TitlePage, isEnglish }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
@@ -33,12 +33,21 @@ export const Sidebar: React.FC<Props> = ({ TitlePage }) => {
         <SidebarContainer isActive={isOpen}>
           {isOpen && (
             <div className="ContainerNav">
-              {TitlePage?.map((item, index) => (
-                <NavLink href={`#${item.id}`} key={index}>
+              {TitlePage?.map((item) => (
+                <NavLink href={`#${item.id}`} key={item.id}>
                   {item.title}
                 </NavLink>
               ))}
-              <Button>Let's Talk</Button>
+              <Button
+                onClick={() =>
+                  window.open(
+                    "https://mail.google.com/mail/?view=cm&fs=1&to=rackelrodrigues247@gmail.com",
+                    "_blank"
+                  )
+                }
+              >
+                {isEnglish ? "Lets a Talk" : "  Entre em contato"}
+              </Button>
             </div>
           )}
         </SidebarContainer>

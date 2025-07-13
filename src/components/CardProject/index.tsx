@@ -10,18 +10,22 @@ import {
 
 type CardData = {
   projectName: string;
-  description: string;
   languages: string[];
   repositoryLink: string;
   websiteLink: string;
   urlImage: string;
+  description: {
+    pt: string;
+    en: string;
+  };
 };
 
 interface CardProps {
   data: CardData[];
+  isEnglish?: boolean;
 }
 
-const CardProject = ({ data }: CardProps) => {
+const CardProject = ({ data, isEnglish }: CardProps) => {
   return (
     <>
       {data.map((project, id) => (
@@ -30,12 +34,14 @@ const CardProject = ({ data }: CardProps) => {
             src={project.urlImage}
             alt="imageProject"
             onError={(e) => {
-              e.currentTarget.src = "/src/assets/images/background.png";
+              e.currentTarget.src = "/images/background.png";
             }}
           />
           <div>
             <Nameproject>{project.projectName}</Nameproject>
-            <Description>{project.description}</Description>
+            <Description>
+              {isEnglish ? project.description.en : project.description.pt}
+            </Description>
           </div>
           <ContainerTags>
             {project.languages.map((lang, index) => (
@@ -58,7 +64,7 @@ const CardProject = ({ data }: CardProps) => {
               href={project.websiteLink}
               target="_blank"
             >
-              Visitar
+              {isEnglish ? "View Site" : "Visitar"}
             </Button>
           </div>
         </Container>

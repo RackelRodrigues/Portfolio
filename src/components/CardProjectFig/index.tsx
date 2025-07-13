@@ -9,9 +9,10 @@ type CardData = {
 
 interface CardProps {
   data: CardData[];
+  isEnglish?: boolean;
 }
 
-const CardFigma = ({ data }: CardProps) => {
+const CardFigma = ({ data, isEnglish }: CardProps) => {
   return (
     <ContainerAll>
       {data.map((project, id) => (
@@ -19,7 +20,7 @@ const CardFigma = ({ data }: CardProps) => {
           <Walpaper
             src={project.urlImage}
             onError={(e) => {
-              e.currentTarget.src = "src/assets/images/background.png";
+              e.currentTarget.src = "/images/background.png";
             }}
           />
           <div className="buttonsContainer">
@@ -28,14 +29,14 @@ const CardFigma = ({ data }: CardProps) => {
                 window.open(project.notionLink, "_blank", "noopener,noreferrer")
               }
             >
-              Visualizar Notion
+              {isEnglish ? "View Notion" : "Visualizar Notion"}
             </Button>
             <Button
               onClick={() =>
                 window.open(project.figmaLink, "_blank", "noopener,noreferrer")
               }
             >
-              Visualizar Design
+              {isEnglish ? "View Design" : "Visualizar Design"}
             </Button>
           </div>
         </Container>

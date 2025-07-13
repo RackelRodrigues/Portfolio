@@ -1,30 +1,52 @@
+import { useState } from "react";
+import LanguageSwitcher from "../../LanguageSwitcher";
 import {
   Background,
   Text,
   HelloMessage,
   // Button,
   Image,
+  ContainerAll,
 } from "./styles";
 
 interface HomeProps {
   id?: string;
+  isEnglish: boolean;
+  onChangeLanguage: (isEnglish: boolean) => void;
 }
 
-const Home = ({ id }: HomeProps) => {
+const Home = ({ id, isEnglish, onChangeLanguage }: HomeProps) => {
+  // const [isEnglish, setIsEnglish] = useState(false);
   return (
-    <div>
+    <ContainerAll>
       <Background id={id}>
-        <Image src="images/Rackel.svg" alt="foto minha" />
+        <Image src="images/Me/Rackel.svg" alt="foto minha" />
         <div>
           <HelloMessage>Hello</HelloMessage>
-          <Text>
-            Sou <span>Rackel Rodrigues</span>, desenvolvedora web apaixonada por
-            transformar ideias em realidade através de código.
-          </Text>
-          <Text>Bem-vindo ao meu mundo digital!</Text>
+          {isEnglish ? (
+            <>
+              <Text>
+                I'm <span>Rackel Rodrigues</span>, a web developer passionate
+                about turning ideas into reality through code.
+              </Text>
+              <Text>Welcome to my digital world!</Text>
+            </>
+          ) : (
+            <>
+              <Text>
+                Sou <span>Rackel Rodrigues</span>, desenvolvedora web apaixonada
+                por transformar ideias em realidade através de código.
+              </Text>
+              <Text>Bem-vindo ao meu mundo digital!</Text>
+            </>
+          )}
         </div>
       </Background>
-    </div>
+      <LanguageSwitcher
+        isEnglish={isEnglish}
+        onChangeLanguage={onChangeLanguage}
+      />
+    </ContainerAll>
   );
 };
 

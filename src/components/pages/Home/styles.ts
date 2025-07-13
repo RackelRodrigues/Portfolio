@@ -97,3 +97,5 @@ export const Nav = styled.a`
     }
   }
 `;
+
+export const ContainerAll = styled.div``;

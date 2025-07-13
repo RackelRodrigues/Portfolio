@@ -5,14 +5,17 @@ import { Background, Container } from "./styles";
 
 interface ProjectsFigmaProps {
   id?: string;
+  isEnglish?: boolean;
 }
 
-const ProjectsFigma = ({ id }: ProjectsFigmaProps) => {
+const ProjectsFigma = ({ id, isEnglish }: ProjectsFigmaProps) => {
   return (
     <Container id={id}>
-      <Title variantColor="var(--secondary-color)">Projetos no Figma</Title>
+      <Title variantColor="var(--secondary-color)">
+        {isEnglish ? "Projects on Figma" : "Projetos no Figma"}
+      </Title>
       <Background>
-        <CardFigma data={data} />
+        <CardFigma data={data} isEnglish={isEnglish} />
       </Background>
     </Container>
   );

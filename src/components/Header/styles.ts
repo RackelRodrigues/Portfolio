@@ -15,7 +15,8 @@ export const Container = styled.header`
   .Containerall {
     display: flex;
     gap: 1rem;
-
+    @media screen and (min-width: 765px) and (max-width: 1021px) {
+    }
     @media screen and (max-width: 1020px) {
       display: none;
     }
@@ -69,6 +70,10 @@ export const ContainerNav = styled.div`
   display: flex;
   flex-direction: row;
   gap: 3rem;
+
+  @media screen and (min-width: 765px) and (max-width: 1024px) {
+    gap: 1rem;
+  }
 `;
 
 export const Nav = styled.a`

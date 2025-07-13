@@ -5,14 +5,17 @@ import { Background, Container } from "./styles";
 
 interface ProjectProps {
   id?: string;
+  isEnglish: boolean;
 }
 
-const Projects = ({ id }: ProjectProps) => {
+const Projects = ({ id, isEnglish }: ProjectProps) => {
   return (
     <Container id={id}>
-      <Title variantColor="var(--secondary-color)">Projetos</Title>
+      <Title variantColor="var(--secondary-color)">
+        {isEnglish ? "Projects" : "Projetos"}
+      </Title>
       <Background>
-        <CardProject data={data} />
+        <CardProject data={data} isEnglish={isEnglish} />
       </Background>
     </Container>
   );
