@@ -98,4 +98,6 @@ export const Nav = styled.a`
   }
 `;
 
-export const ContainerAll = styled.div``;
+export const ContainerAll = styled.div`
+  z-index: 1;
+`;

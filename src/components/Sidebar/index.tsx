@@ -7,7 +7,7 @@ import {
   HamburgerMenu,
   HamburgerMenuopen,
   Button,
-  Test,
+  Container,
 } from "./styles";
 
 type Title = {
@@ -24,7 +24,7 @@ export const Sidebar: React.FC<Props> = ({ TitlePage, isEnglish }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <Test>
+      <Container>
         <ContainerButton>
           <ButtonMenu onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <HamburgerMenuopen /> : <HamburgerMenu />}
@@ -51,7 +51,7 @@ export const Sidebar: React.FC<Props> = ({ TitlePage, isEnglish }) => {
             </div>
           )}
         </SidebarContainer>
-      </Test>
+      </Container>
     </>
   );
 };

@@ -13,13 +13,8 @@ export const Background = styled.div`
 
   @media screen and (min-width: 765px) and (max-width: 1280px) {
     grid-template-columns: repeat(2, 1fr);
-    /* gap: 2rem; */
     padding: 0 0;
-    max-width: 100%;
-    justify-content: center;
-    padding: 0 0;
-
-    /* justify-self: center; */
+    max-width: 55rem;
   }
 
   @media screen and (max-width: 768px) {

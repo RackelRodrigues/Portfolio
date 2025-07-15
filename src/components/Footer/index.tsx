@@ -10,7 +10,6 @@ import {
   StyledLinkedin,
   StyledDiscord,
 } from "./styles";
-import { menuList } from "../../utils/menuList";
 import { buttonLinks } from "../../utils/ListLinks";
 
 type MenuItem = {

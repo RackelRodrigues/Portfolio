@@ -1,13 +1,5 @@
-import { useState } from "react";
 import LanguageSwitcher from "../../LanguageSwitcher";
-import {
-  Background,
-  Text,
-  HelloMessage,
-  // Button,
-  Image,
-  ContainerAll,
-} from "./styles";
+import { Background, Text, HelloMessage, Image, ContainerAll } from "./styles";
 
 interface HomeProps {
   id?: string;
@@ -16,7 +8,6 @@ interface HomeProps {
 }
 
 const Home = ({ id, isEnglish, onChangeLanguage }: HomeProps) => {
-  // const [isEnglish, setIsEnglish] = useState(false);
   return (
     <ContainerAll>
       <Background id={id}>
@@ -41,11 +32,15 @@ const Home = ({ id, isEnglish, onChangeLanguage }: HomeProps) => {
             </>
           )}
         </div>
+        <LanguageSwitcher
+          isEnglish={isEnglish}
+          onChangeLanguage={onChangeLanguage}
+        />
       </Background>
-      <LanguageSwitcher
+      {/* <LanguageSwitcher
         isEnglish={isEnglish}
         onChangeLanguage={onChangeLanguage}
-      />
+      /> */}
     </ContainerAll>
   );
 };

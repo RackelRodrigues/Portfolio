@@ -1,6 +1,7 @@
 import { Button, FlagImage, LanguageButtonWrapper } from "./styles";
 
 interface Props {
+  isOpen?: boolean;
   isEnglish: boolean;
   onChangeLanguage: (isEnglish: boolean) => void;
 }

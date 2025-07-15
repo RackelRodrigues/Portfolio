@@ -70,6 +70,7 @@ export const Text = styled.p`
 
   @media screen and (max-width: 480px) {
     font-size: 0.7rem;
+    margin-top: 0.5rem;
   }
 `;
 
@@ -86,7 +87,7 @@ export const Nav = styled.a`
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 `;
 

@@ -34,7 +34,7 @@ const CardProject = ({ data, isEnglish }: CardProps) => {
             src={project.urlImage}
             alt="imageProject"
             onError={(e) => {
-              e.currentTarget.src = "/images/background.png";
+              e.currentTarget.src = "public/images/background.png";
             }}
           />
           <div>
@@ -64,7 +64,7 @@ const CardProject = ({ data, isEnglish }: CardProps) => {
               href={project.websiteLink}
               target="_blank"
             >
-              {isEnglish ? "View Site" : "Visitar"}
+              {isEnglish ? "See Live" : "Visitar"}
             </Button>
           </div>
         </Container>

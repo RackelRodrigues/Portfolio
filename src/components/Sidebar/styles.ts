@@ -5,9 +5,11 @@ interface SidebarProps {
   isActive?: boolean;
 }
 
-export const Test = styled.div`
+export const Container = styled.div`
+  position: relative;
   background-color: transparent;
   height: 100%;
+  z-index: 1000;
 `;
 export const SidebarContainer = styled.div<SidebarProps>`
   position: fixed;
@@ -49,6 +51,8 @@ export const SidebarContainer = styled.div<SidebarProps>`
     padding: 8rem 1rem 1rem 1rem;
     gap: 4rem;
     background-color: transparent;
+
+    position: relative;
     @media screen and (max-width: 320px) {
       gap: 3.2rem;
     }

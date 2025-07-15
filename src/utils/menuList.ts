@@ -8,7 +8,7 @@ export const menuList = {
   ],
   en: [
     { id: "Home", title: "Home" },
-    { id: "About", title: "About Me" },
+    { id: "About", title: "About me" },
     { id: "Skills", title: "Skills" },
     { id: "Projects", title: "Projects" },
     { id: "Figma", title: "Projects on Figma" },

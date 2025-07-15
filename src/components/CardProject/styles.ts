@@ -21,7 +21,7 @@ export const Container = styled.div`
     width: 100%;
     gap: 1.5rem;
 
-    @media (max-width: 609px) {
+    @media screen and (max-width: 609px) {
       gap: 0.5rem;
     }
   }
@@ -31,6 +31,7 @@ export const Button = styled.button<Props>`
   outline: none;
   padding: 0.5rem 3.5rem;
   flex: 1;
+
   background-color: ${({ Variante }) =>
     Variante === 1 ? "var(--primary-color)" : "transparent"};
   border: 1px solid var(--primary-color);
@@ -47,7 +48,7 @@ export const Button = styled.button<Props>`
   }
 
   @media (max-width: 609px) {
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 2rem;
   }
 `;
 
@@ -64,9 +65,9 @@ export const Linguages = styled.span`
   cursor: pointer;
 
   @media screen and (max-width: 768px) {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 300;
-    padding: 0 0.5rem;
+    padding: 0 0.1rem;
   }
 `;
 

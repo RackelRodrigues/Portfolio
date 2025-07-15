@@ -20,7 +20,7 @@ const CardFigma = ({ data, isEnglish }: CardProps) => {
           <Walpaper
             src={project.urlImage}
             onError={(e) => {
-              e.currentTarget.src = "/images/background.png";
+              e.currentTarget.src = "public/images/background.png";
             }}
           />
           <div className="buttonsContainer">
