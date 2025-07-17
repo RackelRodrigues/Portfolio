@@ -13,7 +13,7 @@ import {
   TextColumn,
   ContainerSubtitle,
 } from "./styles";
-import Resume from "/images/_curriculo rackel.pdf";
+import Resume from "/images/_curriculo_rackel.pdf";
 
 interface AboutMeProps {
   id?: string;
