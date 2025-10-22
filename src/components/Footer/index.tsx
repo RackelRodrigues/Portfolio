@@ -48,6 +48,8 @@ const Footer = ({ menuItems, isEnglish }: FooterProps) => {
             href={buttonLinks[0].href}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={buttonLinks[0].title}
+            title={buttonLinks[0].title}
           >
             <StyledInstagram />
           </SocialMedia>
@@ -55,6 +57,8 @@ const Footer = ({ menuItems, isEnglish }: FooterProps) => {
             href={buttonLinks[1].href}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={buttonLinks[1].title}
+            title={buttonLinks[1].title}
           >
             <StyledLinkedin />
           </SocialMedia>
@@ -62,6 +66,8 @@ const Footer = ({ menuItems, isEnglish }: FooterProps) => {
             href={buttonLinks[2].href}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={buttonLinks[2].title}
+            title={buttonLinks[2].title}
           >
             <StyledDiscord />
           </SocialMedia>
@@ -69,6 +75,8 @@ const Footer = ({ menuItems, isEnglish }: FooterProps) => {
             href={buttonLinks[3].href}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={buttonLinks[3].title}
+            title={buttonLinks[3].title}
           >
             <StyledGithub size={27} />
           </SocialMedia>

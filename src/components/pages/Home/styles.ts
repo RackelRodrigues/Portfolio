@@ -38,7 +38,7 @@ export const Image = styled.img`
   }
 `;
 
-export const Text = styled.h4`
+export const Text = styled.h2`
   font-family: var(--main-font);
   color: var(--primary-color);
   font-size: 2.5rem;

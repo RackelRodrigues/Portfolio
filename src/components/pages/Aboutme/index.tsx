@@ -69,7 +69,7 @@ const AboutMe = ({ id, isEnglish }: AboutMeProps) => {
           <ImageColumn>
             <TagName>Hey, There!</TagName>
             <ContainerImages>
-              <Image src="images/Me/fot_port2.png" />
+              <Image src="images/Me/fot_port2.png" alt="Rackel Rodrigues" />
             </ContainerImages>
           </ImageColumn>
           <TextColumn>
@@ -98,11 +98,9 @@ const AboutMe = ({ id, isEnglish }: AboutMeProps) => {
                 </>
               )}
             </ContainerSubtitle>
-            <Buttondownload>
-              <a href={Resume} download="Resume">
-                <Svgdownload />
-                {isEnglish ? "Resume" : "Currículo"}
-              </a>
+            <Buttondownload onClick={() => window.open(Resume)}>
+              <Svgdownload />
+              {isEnglish ? "Resume" : "Currículo"}
             </Buttondownload>
           </TextColumn>
         </PhotoAndText>

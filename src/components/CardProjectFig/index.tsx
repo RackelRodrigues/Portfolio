@@ -5,6 +5,7 @@ type CardData = {
   notionLink: string;
   figmaLink: string;
   urlImage: string;
+  imageAlt: string;
 };
 
 interface CardProps {
@@ -19,6 +20,7 @@ const CardFigma = ({ data, isEnglish }: CardProps) => {
         <Container key={id}>
           <Walpaper
             src={project.urlImage}
+            alt={project.imageAlt}
             onError={(e) => {
               e.currentTarget.src = "public/images/background.png";
             }}

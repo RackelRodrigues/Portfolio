@@ -43,7 +43,7 @@ export const Container = styled.footer`
 `;
 
 export const Logo = styled.h2`
-  color: var(--secondary-color);
+  color: var(--background-color);
   font-family: var(--decorative-font);
   font-size: 2.16rem;
 

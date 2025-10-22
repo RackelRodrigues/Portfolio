@@ -14,6 +14,7 @@ type CardData = {
   repositoryLink: string;
   websiteLink: string;
   urlImage: string;
+  imageAlt: string;
   description: {
     pt: string;
     en: string;
@@ -32,7 +33,7 @@ const CardProject = ({ data, isEnglish }: CardProps) => {
         <Container key={id}>
           <ImageProjct
             src={project.urlImage}
-            alt="imageProject"
+            alt={project.imageAlt}
             onError={(e) => {
               e.currentTarget.src = "public/images/background.png";
             }}

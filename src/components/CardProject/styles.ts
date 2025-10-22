@@ -88,7 +88,6 @@ export const Nameproject = styled.h3`
   font-size: 1.5rem;
   font-weight: 200;
   color: var(--primary-color);
-
   @media screen and (max-width: 768px) {
     font-size: 2rem;
   }

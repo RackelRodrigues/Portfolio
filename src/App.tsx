@@ -16,11 +16,13 @@ function App() {
   return (
     <>
       <Header menuItems={menu} isEnglish={isEnglish} />
-      <Home id="Home" isEnglish={isEnglish} onChangeLanguage={setIsEnglish} />
-      <AboutMe id="About" isEnglish={isEnglish} />
-      <MySkills id="Skills" isEnglish={isEnglish} />
-      <Projects id="Projects" isEnglish={isEnglish} />
-      <ProjectsFigma id="Figma" isEnglish={isEnglish} />
+      <main>
+        <Home id="Home" isEnglish={isEnglish} onChangeLanguage={setIsEnglish} />
+        <AboutMe id="About" isEnglish={isEnglish} />
+        <MySkills id="Skills" isEnglish={isEnglish} />
+        <Projects id="Projects" isEnglish={isEnglish} />
+        <ProjectsFigma id="Figma" isEnglish={isEnglish} />
+      </main>
       <Footer menuItems={menu} isEnglish={isEnglish} />
     </>
   );
