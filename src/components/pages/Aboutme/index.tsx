@@ -69,7 +69,11 @@ const AboutMe = ({ id, isEnglish }: AboutMeProps) => {
           <ImageColumn>
             <TagName>Hey, There!</TagName>
             <ContainerImages>
-              <Image src="images/Me/fot_port2.png" alt="Rackel Rodrigues" />
+              <Image
+                src="images/Me/fot_port2.png"
+                alt="Rackel Rodrigues"
+                fetchPriority="high"
+              />
             </ContainerImages>
           </ImageColumn>
           <TextColumn>

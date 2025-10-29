@@ -1,7 +1,6 @@
 import { Button, FlagImage, LanguageButtonWrapper } from "./styles";
 
 interface Props {
-  isOpen?: boolean;
   isEnglish: boolean;
   onChangeLanguage: (isEnglish: boolean) => void;
 }
@@ -16,7 +15,8 @@ const LanguageSwitcher = ({ isEnglish, onChangeLanguage }: Props) => {
               ? "/images/Flags/FlagBrazil.png"
               : "/images/Flags/FlagEnglish.png"
           }
-          alt="Flag"
+          alt="change linguage button"
+          fetchPriority="high"
         />
       </Button>
     </LanguageButtonWrapper>

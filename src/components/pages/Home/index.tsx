@@ -11,7 +11,11 @@ const Home = ({ id, isEnglish, onChangeLanguage }: HomeProps) => {
   return (
     <ContainerAll>
       <Background id={id}>
-        <Image src="images/Me/Rackel.svg" alt="foto minha" />
+        <Image
+          src="images/Me/Rackel.svg"
+          alt="foto minha"
+          fetchPriority="high"
+        />
         <div>
           <HelloMessage>Hello</HelloMessage>
           {isEnglish ? (
@@ -37,10 +41,6 @@ const Home = ({ id, isEnglish, onChangeLanguage }: HomeProps) => {
           onChangeLanguage={onChangeLanguage}
         />
       </Background>
-      {/* <LanguageSwitcher
-        isEnglish={isEnglish}
-        onChangeLanguage={onChangeLanguage}
-      /> */}
     </ContainerAll>
   );
 };

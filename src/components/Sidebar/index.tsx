@@ -26,7 +26,10 @@ export const Sidebar: React.FC<Props> = ({ TitlePage, isEnglish }) => {
     <>
       <Container>
         <ContainerButton>
-          <ButtonMenu onClick={() => setIsOpen(!isOpen)}>
+          <ButtonMenu
+            aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
+            onClick={() => setIsOpen(!isOpen)}
+          >
             {isOpen ? <HamburgerMenuopen /> : <HamburgerMenu />}
           </ButtonMenu>
         </ContainerButton>
