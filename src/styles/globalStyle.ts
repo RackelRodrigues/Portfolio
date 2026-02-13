@@ -20,3 +20,7 @@ export const Title = styled.h1<Props>`
     margin: 2rem auto;
   }
 `;
+
+export const PageContent = styled.div`
+  transition: all 0.3s ease-in-out;
+`;

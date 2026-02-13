@@ -23,7 +23,7 @@ const SkillBar = ({
             src={urlImage}
             alt={imageAlt}
             onError={(e) => {
-              e.currentTarget.src = "public/images/background.png";
+              e.currentTarget.src = "/images/background.png";
             }}
           />
         </Porcentage>

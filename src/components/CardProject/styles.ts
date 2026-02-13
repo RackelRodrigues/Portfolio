@@ -61,7 +61,6 @@ export const Linguages = styled.span`
   border: 2px solid var(--primary-color);
   color: var(--primary-color);
   border-radius: 0.2rem;
-  margin: 1rem 0;
   cursor: pointer;
 
   @media screen and (max-width: 768px) {
@@ -114,4 +113,8 @@ export const ContainerTags = styled.div`
   flex-direction: row;
   flex: 1;
   width: 100%;
+  white-space: nowrap;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0.5rem 0 0.5rem 0;
 `;

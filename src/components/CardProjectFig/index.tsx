@@ -22,7 +22,7 @@ const CardFigma = ({ data, isEnglish }: CardProps) => {
             src={project.urlImage}
             alt={project.imageAlt}
             onError={(e) => {
-              e.currentTarget.src = "public/images/background.png";
+              e.currentTarget.src = "/images/background.png";
             }}
           />
           <div className="buttonsContainer">

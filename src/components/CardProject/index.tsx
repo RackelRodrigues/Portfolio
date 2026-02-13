@@ -35,7 +35,7 @@ const CardProject = ({ data, isEnglish }: CardProps) => {
             src={project.urlImage}
             alt={project.imageAlt}
             onError={(e) => {
-              e.currentTarget.src = "public/images/background.png";
+              e.currentTarget.src = "/images/background.png";
             }}
           />
           <div>
@@ -44,6 +44,7 @@ const CardProject = ({ data, isEnglish }: CardProps) => {
               {isEnglish ? project.description.en : project.description.pt}
             </Description>
           </div>
+
           <ContainerTags>
             {project.languages.map((lang, index) => (
               <Linguages key={index}>{lang}</Linguages>

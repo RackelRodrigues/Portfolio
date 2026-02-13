@@ -6,6 +6,7 @@ import MySkills from "./components/pages/MySkills/index.tsx";
 import Projects from "./components/pages/Projects/index.tsx";
 import ProjectsFigma from "./components/pages/ProjectsFigma/index.tsx";
 import Footer from "./components/Footer/index.tsx";
+import { PageContent } from "./styles/globalStyle.ts";
 import { useState } from "react";
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
   const menu = menuList[isEnglish ? "en" : "pt"];
 
   return (
-    <>
+    <PageContent>
       <Header menuItems={menu} isEnglish={isEnglish} />
       <main>
         <Home id="Home" isEnglish={isEnglish} onChangeLanguage={setIsEnglish} />
@@ -24,7 +25,7 @@ function App() {
         <ProjectsFigma id="Figma" isEnglish={isEnglish} />
       </main>
       <Footer menuItems={menu} isEnglish={isEnglish} />
-    </>
+    </PageContent>
   );
 }
 

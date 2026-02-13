@@ -1,15 +1,44 @@
 [
   {
     "projectName": "CineFlix",
-    "languages": ["React", "TypeScript", "Styled Components", "TMDB API"],
+    "languages": [
+      "React",
+      "Redux",
+      "Styled Components",
+      "React Router",
+      "Axios",
+      "TMDB API"
+    ],
     "repositoryLink": "https://github.com/RackelRodrigues/MovieDemoReact",
     "websiteLink": "https://cineflix-self.vercel.app/",
     "description": {
-      "pt": "Aplicação de catálogo de filmes com exibição de títulos, sinopses detalhadas, página de detalhes e funcionalidade de pesquisa em tempo real por título.",
-      "en": "Movie catalog application featuring title displays, detailed synopses, a details page, and real-time title search functionality."
+      "pt": "Aplicação de catálogo de filmes pensada como produto digital, permitindo explorar títulos, acessar informações detalhadas e realizar buscas em tempo real, com uma navegação fluida e centrada na experiência do usuário.",
+      "en": "Movie catalog application designed as a digital product, enabling users to explore titles, access detailed information, and perform real-time searches with a smooth, user-centered experience."
     },
     "urlImage": "https://i.ibb.co/20S24DhP/background-4.png",
-    "imageAlt": "CIneflix Banner"
+    "imageAlt": "Cineflix Banner"
+  },
+  {
+    "projectName": "Multi-Step Form",
+    "languages": [
+      "React",
+      "TypeScript",
+      "Context API",
+      "SCSS",
+      "react-hook-form",
+      "Zod",
+      "Cypress",
+      "Jest",
+      "React Testing Library"
+    ],
+    "repositoryLink": "https://github.com/RackelRodrigues/Multi-step_form",
+    "websiteLink": "https://multi-step-form-eight-lac.vercel.app/",
+    "description": {
+      "pt": "Formulário multi-etapas que simula a contratação de um serviço, conduzindo o usuário por escolhas progressivas, revisão das opções e confirmação final, com uma navegação fluida e experiência intuitiva do início ao fim.",
+      "en": "A multi-step form that simulates subscribing to a service, guiding users through progressive choices, review, and final confirmation with a smooth and intuitive experience from start to finish."
+    },
+    "urlImage": "https://i.ibb.co/B2YSDLFn/preview-1.jpg",
+    "imageAlt": "Multi-Step Form Preview"
   },
   {
     "projectName": "Space Tourism",
@@ -58,17 +87,5 @@
     },
     "urlImage": "https://i.ibb.co/7xBbhbrC/background-1.png",
     "imageAlt": "Rocketflix Banner"
-  },
-  {
-    "projectName": "Social Tree",
-    "languages": ["React", "css", "GitHub API"],
-    "repositoryLink": "https://github.com/RackelRodrigues/Social_Tree",
-    "websiteLink": "https://social-tree-khaki.vercel.app/",
-    "description": {
-      "pt": "Social Tree é um site simples e organizado para reunir e exibir links importantes, como redes sociais, portfólio, contatos e outros. Ideal para usar como bio em perfis de redes sociais.",
-      "en": "Social Tree is a simple and organized website to gather and display important links such as social networks, portfolio, contacts, and more. Ideal for use as a bio on social media profiles."
-    },
-    "urlImage": "https://i.ibb.co/SwvxT0fc/background-3.png",
-    "imageAlt": "Social Tree Banner"
   }
 ]
