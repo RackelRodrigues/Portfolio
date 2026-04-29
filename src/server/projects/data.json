@@ -41,6 +41,30 @@
     "imageAlt": "Multi-Step Form Preview"
   },
   {
+    "projectName": "Trainee",
+    "languages": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Sass",
+      "Zod",
+      "React Hook Form",
+      "Jest",
+      "React Testing Library",
+      "GitHub Actions",
+      "CI/CD",
+      "Vercel"
+    ],
+    "repositoryLink": "https://github.com/RackelRodrigues/Trainee",
+    "websiteLink": "https://trainee-sandy.vercel.app/",
+    "description": {
+      "pt": "O Trainee é uma plataforma web que conecta candidatos a vagas, com foco inicial em estágios. O projeto simula um ambiente real de mercado, aplicando boas práticas de engenharia de software, organização de código, acessibilidade e automação.",
+      "en": "Trainee is a web platform that connects candidates to job opportunities, initially focused on internships. It simulates a real market environment, applying best software engineering practices, code organization, accessibility, and automation."
+    },
+    "urlImage": "https://i.ibb.co/20S24DhP/background-4.png",
+    "imageAlt": "Trainee Platform Banner"
+  },
+  {
     "projectName": "Space Tourism",
     "languages": ["React", "TypeScript", "Styled Components"],
     "repositoryLink": "https://github.com/RackelRodrigues/Space_Tourism",
@@ -76,16 +100,29 @@
     "urlImage": "https://i.ibb.co/N6YrM52p/preview.jpg",
     "imageAlt": "Browser Extension Banner"
   },
+
   {
-    "projectName": "Rocketflix",
-    "languages": ["React", "TypeScript", "TMDB API"],
-    "repositoryLink": "https://github.com/RackelRodrigues/Rocketflix",
-    "websiteLink": "https://rocketflix-three.vercel.app/",
+    "projectName": "Trainee",
+    "languages": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Sass",
+      "Zod",
+      "React Hook Form",
+      "Jest",
+      "React Testing Library",
+      "GitHub Actions",
+      "CI/CD",
+      "Vercel"
+    ],
+    "repositoryLink": "https://github.com/RackelRodrigues/Trainee",
+    "websiteLink": "https://trainee-sandy.vercel.app/",
     "description": {
-      "pt": "Rocketflix é uma plataforma web que recomenda filmes aleatórios com apenas um clique. Rápido, simples, prático e divertido!",
-      "en": "Rocketflix is a web platform that recommends random movies with just one click. Fast, simple, practical, and fun!"
+      "pt": "O Trainee é uma plataforma web de candidaturas que conecta candidatos a oportunidades de trabalho, com foco inicial em estágios. O projeto simula um ambiente real de mercado, aplicando boas práticas de engenharia de software, organização de código, acessibilidade e automação de processos.",
+      "en": "Trainee is a web application for job applications that connects candidates to job opportunities, initially focused on internships. The project simulates a real market environment, applying best software engineering practices, code organization, accessibility, and process automation."
     },
-    "urlImage": "https://i.ibb.co/7xBbhbrC/background-1.png",
-    "imageAlt": "Rocketflix Banner"
+    "urlImage": "https://i.ibb.co/20S24DhP/background-4.png",
+    "imageAlt": "Trainee Platform Banner"
   }
 ]

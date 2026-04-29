@@ -13,7 +13,8 @@ import {
   TextColumn,
   ContainerSubtitle,
 } from "./styles";
-import Resume from "/images/_curriculo rackel.pdf";
+import Resume from "/images/PDFs/Rackelrodrigues_front_end_I.pdf";
+import Curriculo from "/images/PDFs/Rackelrodrigues_front_end_P.pdf";
 
 interface AboutMeProps {
   id?: string;
@@ -21,6 +22,14 @@ interface AboutMeProps {
 }
 
 const AboutMe = ({ id, isEnglish }: AboutMeProps) => {
+  function openResume() {
+    if (isEnglish) {
+      window.open(Resume);
+    } else {
+      window.open(Curriculo);
+    }
+  }
+
   return (
     <Background id={id}>
       <Title variantColor="var(--background-color)">
@@ -102,7 +111,7 @@ const AboutMe = ({ id, isEnglish }: AboutMeProps) => {
                 </>
               )}
             </ContainerSubtitle>
-            <Buttondownload onClick={() => window.open(Resume)}>
+            <Buttondownload onClick={openResume}>
               <Svgdownload />
               {isEnglish ? "Resume" : "Currículo"}
             </Buttondownload>
