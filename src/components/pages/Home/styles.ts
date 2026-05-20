@@ -46,6 +46,7 @@ export const Text = styled.h2`
   max-width: 39rem;
   span {
     color: var(--secondary-color);
+    font-weight: 400;
   }
   @media (max-width: 768px) {
     font-size: 1.7rem;

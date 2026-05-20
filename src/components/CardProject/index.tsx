@@ -57,6 +57,7 @@ const CardProject = ({ data, isEnglish }: CardProps) => {
               as="a"
               href={project.repositoryLink}
               target="_blank"
+              rel="noopener noreferrer"
             >
               Github
             </Button>
@@ -65,6 +66,7 @@ const CardProject = ({ data, isEnglish }: CardProps) => {
               as="a"
               href={project.websiteLink}
               target="_blank"
+              rel="noopener noreferrer"
             >
               {isEnglish ? "See Live" : "Visitar"}
             </Button>

@@ -7,13 +7,39 @@ import Projects from "./components/pages/Projects/index.tsx";
 import ProjectsFigma from "./components/pages/ProjectsFigma/index.tsx";
 import Footer from "./components/Footer/index.tsx";
 import { PageContent } from "./styles/globalStyle.ts";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import "./index.css";
 
 function App() {
   const [isEnglish, setIsEnglish] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const menu = menuList[isEnglish ? "en" : "pt"];
+  useEffect(() => {
+    const handleLoad = () => {
+      setTimeout(() => {
+        setLoading(false);
+      }, 3000);
+    };
 
+    if (document.readyState === "complete") {
+      handleLoad();
+    } else {
+      window.addEventListener("load", handleLoad);
+    }
+
+    return () => {
+      window.removeEventListener("load", handleLoad);
+    };
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="loader-container">
+        <div className="loader"></div>
+      </div>
+    );
+  }
   return (
     <PageContent>
       <Header menuItems={menu} isEnglish={isEnglish} />

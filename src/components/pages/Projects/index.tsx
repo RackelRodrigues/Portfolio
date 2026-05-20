@@ -1,7 +1,7 @@
 import { Title } from "../../../styles/globalStyle";
 import data from "../../../server/projects/data.json";
 import CardProject from "../../CardProject";
-import { Background, Container } from "./styles";
+import { Background, Container, BackgroundMotion } from "./styles";
 import { motion } from "framer-motion";
 
 interface ProjectProps {
@@ -34,18 +34,18 @@ const Projects = ({ id, isEnglish }: ProjectProps) => {
         {isEnglish ? "Projects" : "Projetos"}
       </Title>
 
-      <motion.div
+      <BackgroundMotion
         variants={container}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true }}
       >
         <motion.div variants={item}>
           <Background>
             <CardProject data={data} isEnglish={isEnglish} />
           </Background>
         </motion.div>
-      </motion.div>
+      </BackgroundMotion>
     </Container>
   );
 };

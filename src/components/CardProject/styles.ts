@@ -82,9 +82,9 @@ export const Description = styled.p`
   }
 `;
 
-export const Nameproject = styled.h3`
+export const Nameproject = styled.h1`
   font-family: var(--secondary-font);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 200;
   color: var(--primary-color);
   @media screen and (max-width: 768px) {

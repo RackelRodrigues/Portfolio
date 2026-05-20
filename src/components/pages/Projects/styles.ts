@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const Background = styled.div`
   display: grid;
@@ -26,7 +27,7 @@ export const Background = styled.div`
   }
 
   @media screen and (max-width: 609px) {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     align-items: center;
     justify-items: center;
     margin: 0 auto;
@@ -34,6 +35,9 @@ export const Background = styled.div`
     max-width: 100%;
     padding: 0 0.5rem;
   }
+`;
+export const BackgroundMotion = styled(motion.div)`
+  display: grid;
 `;
 
 export const Container = styled.div``;
