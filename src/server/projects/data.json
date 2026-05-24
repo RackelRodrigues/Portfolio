@@ -61,7 +61,7 @@
       "pt": "O Trainee é uma plataforma web que conecta candidatos a vagas, com foco inicial em estágios. O projeto simula um ambiente real de mercado, aplicando boas práticas de engenharia de software, organização de código, acessibilidade e automação.",
       "en": "Trainee is a web platform that connects candidates to job opportunities, initially focused on internships. It simulates a real market environment, applying best software engineering practices, code organization, accessibility, and automation."
     },
-    "urlImage": "https://i.ibb.co/20S24DhP/background-4.png",
+    "urlImage": "https://i.ibb.co/xtdbzCGc/trainee-image.png",
     "imageAlt": "Trainee Platform Banner"
   },
   {
@@ -102,27 +102,22 @@
   },
 
   {
-    "projectName": "Trainee",
+    "projectName": "Alimentae",
     "languages": [
-      "Next.js",
-      "React",
+      "vue.js",
       "TypeScript",
-      "Sass",
-      "Zod",
-      "React Hook Form",
-      "Jest",
-      "React Testing Library",
-      "GitHub Actions",
-      "CI/CD",
-      "Vercel"
+      "CSS",
+      "lucide-vue-next",
+      "ReactIcons",
+      "Vite"
     ],
-    "repositoryLink": "https://github.com/RackelRodrigues/Trainee",
-    "websiteLink": "https://trainee-sandy.vercel.app/",
+    "repositoryLink": "https://github.com/RackelRodrigues/Alimentae",
+    "websiteLink": "#",
     "description": {
-      "pt": "O Trainee é uma plataforma web de candidaturas que conecta candidatos a oportunidades de trabalho, com foco inicial em estágios. O projeto simula um ambiente real de mercado, aplicando boas práticas de engenharia de software, organização de código, acessibilidade e automação de processos.",
-      "en": "Trainee is a web application for job applications that connects candidates to job opportunities, initially focused on internships. The project simulates a real market environment, applying best software engineering practices, code organization, accessibility, and process automation."
+      "pt": "O Alimentae é uma plataforma desenvolvida para conectar pessoas que desejam vender comida com clientes que procuram praticidade na hora de pedir refeições. Inspirado em aplicativos de delivery como o iFood, o projeto permite pesquisar comidas, explorar opções de restaurantes e visualizar produtos de forma rápida e intuitiva. A aplicação foi construída com foco em experiência do usuário, interface moderna e navegação fluida, utilizando tecnologias atuais do ecossistema front-end para oferecer uma solução eficiente tanto para vendedores quanto para consumidores.",
+      "en": "Alimentae is a platform developed to connect people who want to sell food with customers looking for convenience when ordering meals. Inspired by delivery apps like iFood, the project allows users to search for food, explore restaurant options, and browse products quickly and intuitively. The application was built with a focus on user experience, modern interface design, and smooth navigation, using modern front-end technologies to deliver an efficient solution for both sellers and consumers."
     },
     "urlImage": "https://i.ibb.co/20S24DhP/background-4.png",
-    "imageAlt": "Trainee Platform Banner"
+    "imageAlt": "Alimentae Platform Banner"
   }
 ]
